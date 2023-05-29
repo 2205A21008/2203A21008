@@ -1,0 +1,17 @@
+In C programming, the two main types of files are text files and binary files. The key difference between them lies in how the data is stored and interpreted.
+
+Text Files :
+***********
+1)Text files store data as a sequence of characters. Each character is represented using an encoding scheme, such as ASCII or UTF-8.
+2)The contents of text files are human-readable and can be opened and edited using text editors.
+3)Text files typically contain plain text, such as letters, numbers, symbols, and newline characters.
+4)They are read and written using text-oriented I/O functions like fopen, fprintf, fscanf, fgets, and fputs.
+5)Examples: source code files (.c, .h), configuration files, log files, and text-based data files (CSV, XML, JSON).
+
+Binary Files :
+*************
+1)Binary files store data in its raw binary format. The data is not interpreted as characters but as a series of bytes.
+2)The contents of binary files are not intended to be human-readable and may contain any type of data, including binary data, structures, or serialized objects.
+3)They can store complex data structures without any concern for character encoding or formatting.
+4)They files are read and written using binary-oriented I/O functions like fopen, fwrite, fread, fseek, and ftell.
+5)Examples: image files (BMP, JPEG), audio files (WAV, MP3), video files (MP4, AVI), and compiled object files (.o, .dll).

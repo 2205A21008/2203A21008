@@ -1,0 +1,33 @@
+In C programming, a pointer to a structure and a pointer to an array are different types of pointers that point to different data structures.
+
+Pointer to a structure:
+***********************
+1)A pointer to a structure holds the memory address of a single structure variable.
+2)It allows accessing the members of the structure using the arrow operator (->) to dereference the pointer and access the members.
+Example:
+--------
+struct Book {
+    char title[50];
+    float price;
+    int rating;
+};
+struct Book book1;
+struct Book *ptr;
+ptr = &book1;
+printf("Title: %s\n", ptr->title);
+printf("Price: %.2f\n", ptr->price);
+printf("Rating: %d\n", ptr->rating);
+
+
+Pointer to an array:
+*******************
+1)A pointer to an array holds the memory address of the first element of the array.
+2)It allows accessing array elements using pointer arithmetic, where the pointer is incremented or decremented to navigate through the elements.
+Example:
+--------
+int numbers[5] = {1, 2, 3, 4, 5};
+int *ptr;
+ptr = numbers;
+printf("%d\n", *ptr);
+ptr++; 
+printf("%d\n", *ptr); 
